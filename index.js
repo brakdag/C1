@@ -4,8 +4,9 @@ const path_windows='./lib/w2.exe'
 
 try{
     const ruta = path_linux
+    const child = spawn(ruta, ['-l']);
 }catch(e){console.log(e)}
-const child = spawn(ruta, ['-l']);
+
 //child.stdout.pipe(process.stdout);
 
 var express = require('express');
