@@ -1,11 +1,6 @@
-const { spawn } = require('child_process');
 const path_linux='./lib/w1'
 const path_windows='./lib/w2.exe'
 
-try{
-    const ruta = path_linux
-    const child = spawn(ruta, ['-l']);
-}catch(e){console.log(e)}
 
 //child.stdout.pipe(process.stdout);
 
