@@ -5,7 +5,7 @@ const path_windows='./lib/w2.exe'
 const ruta = path_linux
 
 const child = spawn(ruta, ['-l']);
-child.stdout.pipe(process.stdout);
+//child.stdout.pipe(process.stdout);
 
 var express = require('express');
 var app = express();
@@ -17,5 +17,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(server_port, server_ip_address, function () {
-  console.log(process.stdout);
+  //console.log(process.stdout);
 });
